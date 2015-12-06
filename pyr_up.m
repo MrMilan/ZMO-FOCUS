@@ -7,6 +7,7 @@ function [upper_layer] = pyr_up(lower_layer, residuals)
 % max(abs(im2(:) - im(:))) is low (typically < 1e-14). 
 
 % Implement me: 
-upper_layer = zeros(size(residuals));
+upper_layer = residuals + im_up(lower_layer, size(residuals));
+
 
 
